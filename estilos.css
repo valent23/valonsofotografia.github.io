@@ -1,0 +1,43 @@
+body {
+  background: #000000;
+  color: #fff;
+}
+
+a {
+  font-size: 15px;
+}
+
+p {
+  font-size: 30px;
+}
+
+body {
+  margin: 5px;
+  padding: 5px;
+  height: 50px;
+  background: #000;
+}
+
+.threeD {
+  color: white;
+  white-space: nowrap;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 3em;
+  font-family: "Futura Md BT";
+  letter-spacing: 0.1em;
+  transition: 0.5s;
+  text-shadow: 1px 1px 0 grey, 1px 2px 0 grey, 1px 3px 0 grey, 1px 4px 0 grey,
+    1px 5px 0 grey, 1px 6px 0 grey, 1px 7px 0 grey, 1px 8px 0 grey,
+    5px 13px 15px white;
+}
+
+.threeD:hover {
+  transition: 0.3s;
+  transform: scale(1.1)translate(-50%, -50%);
+  text-shadow: 1px -1px 0 grey, 1px -2px 0 grey, 1px -3px 0 grey,
+    1px -4px 0 grey, 1px -5px 0 grey, 1px -6px 0 grey, 1px -7px 0 grey,
+    1px -8px 0 grey, 5px -13px 15px black, 5px -13px 25px #808080;
+}

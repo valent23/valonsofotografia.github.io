@@ -1,0 +1,236 @@
+body {
+  background: #000;
+  color: #fff;
+  font-family: "Futura Md BT";
+  margin-left: 0;
+}
+
+nav a {
+  font-size: 25px;
+  z-index: 9999;
+}
+
+.icono {
+  font-size: 25px;
+}
+
+.historia {
+  font-size: 25px;
+  width: 50%;
+  justify-content: center;
+}
+
+.aboutMe {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+body section {
+  width: 1920px;
+  margin-top: -250px;
+}
+
+#t1 {
+  text-indent: 5px;
+}
+
+.sidebar {
+  margin: 0;
+  padding: 0;
+  width: 150px;
+  height: 100%;
+  position: fixed;
+  overflow: auto;
+}
+
+div.content {
+  margin-left: 300px;
+  padding: 30px 16px;
+  width: 1500px;
+}
+
+/* unvisited link */
+a:link {
+  color: white;
+}
+
+/* visited link */
+a:visited {
+  color: white;
+}
+
+/* mouse over link */
+a:hover {
+  color: grey;
+}
+
+/* selected link */
+a:active {
+  color: blue;
+}
+
+.contenedor {
+  width: 100%;
+  min-height: 1vh;
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  margin-left: 15%;
+  margin-top: -300px;
+  padding: 15px;
+}
+.container {
+  margin-left: 0;
+}
+
+.image_contenedor {
+  display: grid;
+  flex-wrap: wrap;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 15px;
+}
+
+.image_contenedor img {
+  width: 100%;
+}
+
+.contenedor .col-sm .image_contenedor .fotos {
+  height: 300px;
+  width: 300px;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.contenedor .image_contenedor .fotos {
+  height: 300px;
+  width: 300px;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.contenedor .image_contenedor .fotos img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  transition: .2s linear;
+}
+
+.contenedor .image_contenedor .fotos:hover img {
+  transform: scale(1.2);
+}
+
+.i_contenedor .icono .icono_fotos img {
+  object-fit: cover;
+  transition: .5s linear;
+}
+
+.i_contenedor .icono .icono_fotos:hover img {
+  transform: scale(1.5);
+}
+
+.contenedor .popup-image {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 2);
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+  display: none;
+}
+
+.contenedor .popup-image span {
+  position: absolute;
+  top: 0;
+  right: 10px;
+  font-size: 40px;
+  font-weight: bolder;
+  color: #fff;
+  cursor: pointer;
+  z-index: 1000;
+}
+
+.contenedor .popup-image img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-25%, -25%);
+  border: 5px solid #fff;
+  border-radius: 5px;
+  width: 750px;
+  object-fit: cover;
+}
+.ima{
+  height: 500px;
+  width: 350px;
+}
+
+@media only screen and (max-width: 576px) {
+  body section ,
+  .contenedor {
+    margin-top: 0px;
+  }
+  body section {
+    width: 375px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  nav a {
+    font-size: 20px;
+  }
+
+  .links {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 25px;
+  }
+
+  .titulo p {
+    font-size: 30px;
+  }
+
+  .headerYNav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .contenedor .col-sm .image_contenedor .fotos {
+    height: 100px;
+    width: 100px;
+  }
+
+  .contenedor .image_contenedor .fotos {
+    height: 100px;
+    width: 100px;
+  }
+
+  .aboutMe img {
+    width: 300px;
+  }
+
+  .contenedor {
+    margin-left: 0%;
+  }
+  #yo {
+    width: 100%;
+    overflow-wrap: break-word;
+    text-align: center;
+  }
+  .historia {
+    font-size: 18px;
+    width: 75%;
+  }
+}
+
+@media only screen and (min-width: 1920px) {
+  .image_contenedor {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
